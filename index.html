@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parralex Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container" onscroll="showScroll()">
+        <div class="moveTop">
+            Top
+        </div>
+        <div class="bgimg one">
+            <div class="caption">
+                <span>
+                    Scroll Down
+                </span>
+            </div>
+        </div>
+
+        <div
+            style="color: #777;background-color:rgb(172, 255, 199);text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;">Parallax Demo</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque nobis ducimus hic recusandae
+                voluptatum repellat quibusdam excepturi quo, quidem labore, laudantium, nulla debitis? Neque sit
+                sapiente fugiat ad nostrum qui. Earum, ea nemo. Possimus laborum ullam cupiditate mollitia magni illum,
+                molestias eveniet ab placeat libero saepe quaerat nulla aspernatur hic sapiente rem labore, architecto,
+                beatae consequuntur voluptates inventore commodi cumque unde laboriosam. Vel, rem assumenda nesciunt
+                veritatis mollitia, alias dignissimos ipsum qui sed, voluptatibus dolorum vero? Incidunt, labore amet
+                porro optio odio ipsa quam.</p>
+        </div>
+        <div class="bgimg two">
+            <div class="div caption">
+                <span>
+                    Scroll Down
+                </span>
+            </div>
+        </div>
+        <div
+            style="color: #777;background-color:rgb(172, 255, 199);text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;">Parallax Demo</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis magnam temporibus voluptas sint eos
+                minima omnis ipsum quisquam soluta, accusantium dignissimos aliquam nemo repellendus quaerat ad incidunt
+                voluptate dolore similique ullam tenetur. Maxime suscipit, amet quo maiores nemo numquam perspiciatis
+                unde inventore itaque deleniti eveniet delectus! Quis, tempore laudantium. Nemo voluptatem fuga vero
+                distinctio est placeat pariatur qui earum nihil alias necessitatibus, voluptate aut, mollitia vel soluta
+                explicabo! Soluta illum neque odit, minus eos quas minima unde placeat quos voluptates magni, quasi quod
+                earum?</p>
+        </div>
+        <div class="bgimg three">
+            <div class="div caption">
+                <span>
+                    Scroll Up
+                </span>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+
+        const topBtn = document.querySelector(".moveTop")
+        const con = document.getElementsByClassName("container")[0]
+        console.log(con)
+        topBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // for smooth scrolling
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>

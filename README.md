@@ -13,7 +13,6 @@ A simple demonstration of the parallax scrolling effect using HTML, CSS, and Jav
 
 - HTML5
 - CSS3
-- JavaScript
 
 ## 📋 How It Works
 
